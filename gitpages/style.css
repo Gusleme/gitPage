@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ====== HEADER ====== */
+header{
+    background-color: #fff085;
+    color: #81567d;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 30%;
+}
+
+/* ====== NAV ====== */
+nav a{
+    color: #81567d;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #f8ac76;
+    padding: 6px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background-color: #e07b39;
+    color: #fff;
+}
+
+/* ====== BACKGROUND ====== */
+body{
+    background-color: #ede9ce;
+}
+
+
+/* ====== GRID DE INTEGRANTES ====== */
+.squad{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsivo */
+    gap: 25px;
+    padding: 30px;
+}
+
+
+.integrante{
+    background-color: #fff085;
+    border: 1px solid #d9d184;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+
+    /* Faz todas terem a mesma altura */
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: 0.3s;
+}
+
+.integrante:hover{
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.integrante img{
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.integrante h3{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #4a3351;
+}
+
+.integrante p{
+    font-size: 15px;
+    color: #555;
+}
+
+/* LINK */
+.integrante a{
+    margin-top: 10px;
+    background-color: #f8ac76;
+    padding: 6px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    transition: 0.3s;
+}
+
+.integrante a:hover{
+    background-color: #e07b39;
+    color: white;
+}
+
+
+/* ====== DESCRIÇÃO ====== */
+.descricao{
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    width: 90%;
+    font-size: 18px;
+    color: #444;
+    background-color: #fff085;
+    border-radius: 10px;
+}
+
+/* ====== FOOTER ====== */
+.footer{
+    margin-top: 40px;
+    background-color: #fff085;
+    color: #81567d;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer p{
+    margin: 0;
+    font-size: 14px;
+}

@@ -1,0 +1,170 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+header{
+  background: #fff085;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img{
+  width: 70px;
+}
+
+/* NAV */
+nav a{
+  background: #f8ac76;
+  color: #81567d;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: .3s;
+}
+
+nav a:hover{
+  background: #e37b3f;
+  color:#fff;
+}
+
+/* ================= BODY ================= */
+
+body{
+  background-color: #ede9ce;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================== LAYOUT ================= */
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* ================== BOX PADRÃO ================= */
+
+.box{
+  background: #f8ac76;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+/* ================== SOBRE ================= */
+
+.projeto{
+  width: 280px;
+}
+
+.projeto h2{
+  color: #81567d;
+  margin-bottom: 15px;
+}
+
+.texto{
+  background:#fff085;
+  padding:15px;
+  border-radius: 10px;
+  color:#81567d;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* ================== TECNOLOGIAS ================= */
+
+.techs{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:20px;
+}
+
+.tech{
+  padding: 14px 25px;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: bold;
+  color:#81567d;
+  width:160px;
+}
+
+.html{
+  background:#f8ac76;
+}
+
+.js{
+  background:#fff085;
+}
+
+.js-dark{
+  background:#81567d;
+  color:#fff;
+}
+
+/* ================== VIDEO ================= */
+
+.video{
+  position: relative;
+  width: 360px;
+}
+
+.video video{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.tag-video{
+  background:#fff085;
+  color:#81567d;
+  padding:7px 15px;
+  display:inline-block;
+  border-radius:6px;
+  margin-bottom:10px;
+  font-weight:bold;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+  margin-top: auto; /* empurra o footer para o fim */
+  background:#fff085;
+  color:#81567d;
+  text-align:center;
+  padding:15px;
+  font-size:14px;
+}
+
+
+/* ================= RESPONSIVO ================= */
+
+@media(max-width:900px){
+
+  .container{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .video,
+  .projeto{
+    width:90%;
+  }
+
+  .tech{
+    width:200px;
+  }
+}
